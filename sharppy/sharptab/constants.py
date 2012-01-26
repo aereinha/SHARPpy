@@ -88,5 +88,5 @@ def QC(val):
         1 if value is good
         0 if value is bad
     '''
-    if val < -998.0 or val > 2.0e5: return 0
+    if val < -998.0 or val > 2.0e5 or val == 999.0 or val == 9999.0 or val == 999.000 or val == 9999.000 or val == 99999.0: return 0
     return 1
